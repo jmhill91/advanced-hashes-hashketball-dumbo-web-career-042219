@@ -238,7 +238,7 @@ def most_points_scored
 end
 
 def winning_team
-  winner=nil
+  winner={}
   game_hash.values.each do |teamDetails|
     teamPoints=0 
     teamDetails[:players]. each do |indvidStats|
