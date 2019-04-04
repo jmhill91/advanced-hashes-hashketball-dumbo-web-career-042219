@@ -239,8 +239,8 @@ end
 
 def winning_team
   winner=nil
-  game_hash.each do |team, teamDetails|
-    totalPoints=0 
+  game_hash.values.each do |teamDetails|
+    teamPoints=0 
     
 end
 
