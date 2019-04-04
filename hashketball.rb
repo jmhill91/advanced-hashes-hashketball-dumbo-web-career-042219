@@ -244,7 +244,7 @@ def winning_team
     if teamDetails[:team_name] == "Brooklyn Nets"
       teamDetails[:players].each do |indvidStats|
         nets += indvidStats[:points]
-      elsif teamDetails[:team_name] == "Charlotte Hornets"
+      else teamDetails[:team_name] == "Charlotte Hornets"
       teamDetails[:players].each do |indvidStats|
         hornets += indvidStats[:points]
       end
