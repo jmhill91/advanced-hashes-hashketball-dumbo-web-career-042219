@@ -238,23 +238,8 @@ def most_points_scored
 end
 
 def winning_team
-  nets=0 
-  hornets=0 
-  game_hash.each do |team, teamDetails|
-    if teamDetails[:team_name] == "Brooklyn Nets"
-      teamDetails[:players].each do |indvidStats|
-        nets += indvidStats[:points]
-      else teamDetails[:team_name] == "Charlotte Hornets"
-      teamDetails[:players].each do |indvidStats|
-        hornets += indvidStats[:points]
-      end
-    end
-    if nets > hornets
-      return "Brooklyn Nets"
-    else
-      return "Charlotte Hornets"
-    end
-  end
+  winner=nil
+  
 end
 
 
