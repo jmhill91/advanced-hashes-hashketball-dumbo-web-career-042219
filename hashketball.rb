@@ -242,6 +242,7 @@ def winning_team
   game_hash.values.each do |teamDetails|
     teamPoints=0 
     teamDetails[:players]. each do |indvidStats|
+      teamPoints += indvidStats[:points]
       
 end
 
