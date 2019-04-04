@@ -238,7 +238,10 @@ def most_points_scored
 end
 
 def winning_team
-  
+  nets=0 
+  hornets=0 
+  game_hash.each do |team, teamDetails|
+    
 end
 
 def player_with_longest_name
