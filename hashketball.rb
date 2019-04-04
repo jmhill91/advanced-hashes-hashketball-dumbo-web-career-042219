@@ -236,3 +236,16 @@ def most_points_scored
   end
   pName
 end
+
+def winning_team
+  
+end
+
+def player_with_longest_name
+  nameSize=0 
+  pName= nil
+end
+
+def long_name_steals_a_ton
+  
+end
