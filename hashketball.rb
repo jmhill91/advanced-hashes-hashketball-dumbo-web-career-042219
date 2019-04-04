@@ -243,7 +243,8 @@ def winning_team
     teamPoints=0 
     teamDetails[:players]. each do |indvidStats|
       teamPoints += indvidStats[:points]
-      
+    end
+    
 end
 
 
