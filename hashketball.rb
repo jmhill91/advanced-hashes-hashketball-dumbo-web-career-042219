@@ -253,6 +253,7 @@ def winning_team
       return "Brooklyn Nets"
     else
       return "Charlotte Hornets"
+    end
   end
 end
 
