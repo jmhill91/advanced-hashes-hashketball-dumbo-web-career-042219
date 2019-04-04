@@ -241,7 +241,9 @@ def winning_team
   nets=0 
   hornets=0 
   game_hash.each do |team, teamDetails|
-    
+    if teamDetails[:team_name] == "Brooklyn Nets"
+      
+      elsif teamDetails[:team_name] == "Charlotte Hornets"
 end
 
 def player_with_longest_name
