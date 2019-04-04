@@ -265,5 +265,9 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton
-  
+  pName=nil
+  pSteals=0 
+  game_hash.each do |team, teamDetails|
+    teamDetails[:players].each do |indvidStats|
+      
 end
