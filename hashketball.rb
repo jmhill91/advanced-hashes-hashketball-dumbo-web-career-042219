@@ -246,7 +246,7 @@ def winning_team
     end
     winner[teamDetails[:team_name]]= teamPoints
   end
-  
+  winer.key
 end
 
 
