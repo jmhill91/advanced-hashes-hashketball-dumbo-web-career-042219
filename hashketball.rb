@@ -222,3 +222,17 @@ def big_shoe_rebounds
   end
   rebound
 end
+
+def most_points_scored
+  pName=nil
+  pScore=0 
+  game_hash.each do |team, teamDetails|
+    teamDetails[:players].each do |indvidStats|
+      if indvidStats[:points] > pScore
+        pScore= indvidStats[:points]
+        pName= indvidStats[:name]
+      end
+    end
+  end
+  pName
+end
