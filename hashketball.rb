@@ -245,6 +245,8 @@ def winning_team
       teamPoints += indvidStats[:points]
     end
     winner[teamDetails[:team_name]]= teamPoints
+  end
+  
 end
 
 
