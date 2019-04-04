@@ -244,6 +244,15 @@ end
 def player_with_longest_name
   nameSize=0 
   pName= nil
+  game_hash.each do |team, teamDetails|
+    teamDetails[:players].each do |indvidStats|
+      if indvidStats[:name].length > nameSize
+        nameSize = indvidStats[:name].length
+        pName= indvidStats[:name]
+      end
+    end
+  end
+  pName
 end
 
 def long_name_steals_a_ton
